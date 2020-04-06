@@ -1,6 +1,6 @@
 package app.controller;
 
-import app.request.UssdRequest;
+import app.request.USSDRequest;
 import com.africastalking.AfricasTalking;
 import com.africastalking.SmsService;
 import com.africastalking.sms.Recipient;
@@ -12,7 +12,7 @@ public class SMSController {
 
     public static String[] getRecipient(){
         // Recipients
-        return new String[]{UssdRequest.getPhoneNumber()};
+        return new String[]{USSDRequest.getPhoneNumber()};
     }
 
     public static String getMessage(String message){

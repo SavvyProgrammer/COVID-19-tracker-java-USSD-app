@@ -1,14 +1,15 @@
 package app.languageResopnses;
 
 import app.models.Country;
-import app.interfaces.MessageInterface;
 import app.interfaces.ResponseInterface;
 import app.controller.SMSController;
 import app.utilities.COVIDTest;
 import app.utilities.ResponseFormatter;
 
+import static app.interfaces.MessageInterface.*;
 
-public class EnglishResponses implements ResponseInterface, MessageInterface {
+
+public class EnglishResponses implements ResponseInterface {
 
 
 
@@ -47,7 +48,7 @@ public class EnglishResponses implements ResponseInterface, MessageInterface {
         }
 
         if (request.length() > 2 && request.charAt(2) == '5')
-            response = COVIDTest.getTest(request);
+            response = COVIDTest.takeTest(request);
 
         return response;
     }

@@ -6,25 +6,24 @@ import app.languageResopnses.HausaResponses;
 import app.languageResopnses.IgboResponses;
 import app.languageResopnses.YorubaResponses;
 import app.network.NetworkClient;
-import app.request.UssdRequest;
 import app.interfaces.MessageInterface;
 import static app.interfaces.ResponseInterface.*;
 
 public class USSDController {
 
 
-    public static String request(){
+    public static String request(String request){
 
 
 
-        if (UssdRequest.getText().length() == 3)
+        if (request.length() == 3)
             NetworkClient.getInstance().getCountryCovidCases();
 
         String response = "";
 
-        System.out.println(UssdRequest.getText());
+        System.out.println(request);
 
-        char firstIndex = UssdRequest.getText().length() != 0 ? UssdRequest.getText().charAt(0) : '\0';
+        char firstIndex = request.length() != 0 ? request.charAt(0) : '\0';
 
 
 
@@ -37,28 +36,28 @@ public class USSDController {
 
             case '1':
 
-                response = EnglishResponses.getResponse(UssdRequest.getText());
+                response = EnglishResponses.getResponse(request);
                 break;
 
             case '2':
 
-                response = HausaResponses.getResponse(UssdRequest.getText());
+                response = HausaResponses.getResponse(request);
                 break;
 
             case '3':
 
-                response = YorubaResponses.getResponse(UssdRequest.getText());
+                response = YorubaResponses.getResponse(request);
                 break;
 
             case '4':
 
-                response = IgboResponses.getResponse(UssdRequest.getText());
+                response = IgboResponses.getResponse(request);
                 break;
 
         }
 
 
-        if (UssdRequest.getText().length() == 15 && UssdRequest.getText().charAt(2) == '4' && UssdRequest.getText().substring(4, 14).matches("[0-9]+")) {
+        if (request.length() == 15 && request.charAt(2) == '4' && request.substring(4, 14).matches("[0-9]+")) {
 
 
             if (firstIndex == '1')

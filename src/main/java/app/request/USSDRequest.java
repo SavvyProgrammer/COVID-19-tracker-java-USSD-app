@@ -3,7 +3,7 @@ package app.request;
 // This class handles Africa's Talking POST Request
 
 
-public class UssdRequest {
+public class USSDRequest {
 
     private static String sessionId = "";
     private static String serviceCode = "";

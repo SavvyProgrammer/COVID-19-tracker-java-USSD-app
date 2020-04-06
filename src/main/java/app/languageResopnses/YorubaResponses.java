@@ -2,14 +2,15 @@ package app.languageResopnses;
 
 import app.controller.SMSController;
 import app.models.Country;
-import app.interfaces.MessageInterface;
 import app.interfaces.ResponseInterface;
 
 import app.utilities.COVIDTest;
 import app.utilities.LocalTranslation;
 import app.utilities.ResponseFormatter;
 
-public class YorubaResponses implements ResponseInterface, MessageInterface {
+import static app.interfaces.MessageInterface.*;
+
+public class YorubaResponses implements ResponseInterface {
 
 
 
@@ -48,7 +49,7 @@ public class YorubaResponses implements ResponseInterface, MessageInterface {
         }
 
         if (request.length() > 2 && request.charAt(2) == '5')
-            response = COVIDTest.getTest(request, ISO_YORUBA);
+            response = COVIDTest.takeTest(request, ISO_YORUBA);
 
 
         return response;

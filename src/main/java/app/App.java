@@ -2,7 +2,7 @@ package app;
 
 import app.controller.USSDController;
 import app.network.NetworkClient;
-import app.request.UssdRequest;
+import app.request.USSDRequest;
 import app.utilities.AtomicRun;
 import com.africastalking.AfricasTalking;
 import com.africastalking.UssdService;
@@ -55,19 +55,19 @@ public class App {
         synchronized (this) {
 
 
-            get("/", (request, response) ->  UssdRequest.string());
+            get("/", (request, response) ->  USSDRequest.string());
 
 
             post("/", (request, response) -> {
 
-                UssdRequest.setSessionId(request.queryParams(UssdService.FLAG_SESSION_ID));
-                UssdRequest.setServiceCode(request.queryParams(UssdService.FLAG_SERVICE_CODE));
-                UssdRequest.setPhoneNumber(request.queryParams(UssdService.FLAG_PHONE_NUMBER));
-                UssdRequest.setText(request.queryParams(UssdService.FLAG_TEXT));
+                USSDRequest.setSessionId(request.queryParams(UssdService.FLAG_SESSION_ID));
+                USSDRequest.setServiceCode(request.queryParams(UssdService.FLAG_SERVICE_CODE));
+                USSDRequest.setPhoneNumber(request.queryParams(UssdService.FLAG_PHONE_NUMBER));
+                USSDRequest.setText(request.queryParams(UssdService.FLAG_TEXT));
 
-                saveToFirebase(UssdRequest.getPhoneNumber());
+                saveToFirebase(USSDRequest.getPhoneNumber());
 
-                return USSDController.request();
+                return USSDController.request(USSDRequest.getText());
 
             });
 

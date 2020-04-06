@@ -48,7 +48,7 @@ public class HausaResponses implements ResponseInterface {
 
 
         if (request.length() > 2 && request.charAt(2) == '5')
-            response = COVIDTest.getTest(request, ISO_HAUSA);
+            response = COVIDTest.takeTest(request, ISO_HAUSA);
 
         return response;
     }

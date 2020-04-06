@@ -19,39 +19,47 @@ public class COVIDTest {
 
     }
 
-    private static  int getTestScore() {
+    private static String getTestScore() {
 
         if (score <= 2)
-            return 1;
+            return "1";
 
         else if (score <= 5)
-            return 2;
+            return "2";
 
         else if (score <= 12)
-            return 3;
+            return "3";
 
         else
-            return 4;
+            return "4";
 
     }
 
+    private static void init(String result) {
 
-    public static  String takeTest(char request) {
+        if (result.matches("[1-4]")) {
+            score = 0;
+            counter = 0;
+        }
+
+    }
+
+    public static String getResponse(char index) {
 
 
         if (counter == 12)
 
-            return String.valueOf(getTestScore());
-        else
-            calculateScore(request);
+            return getTestScore();
+
+        calculateScore(index);
 
         return CHECKLIST[counter++];
 
     }
 
-    public static String getTest(String request) {
+    public static String takeTest(String request) {
 
-        String result = takeTest(request.charAt(request.length() - 1));
+        String result = getResponse(request.charAt(request.length() - 1));
 
         init(result);
 
@@ -76,20 +84,13 @@ public class COVIDTest {
 
     }
 
-    private static void init(String result) {
 
-        if (result.matches("[1-4]")) {
-            score = 0;
-            counter = 0;
-        }
 
-    }
-
-    public static String getTest(String request, String isoLang) {
+    public static String takeTest(String request, String isoLang) {
 
 
 
-        String result = takeTest(request.charAt(request.length() - 1));
+        String result = getResponse(request.charAt(request.length() - 1));
 
         init(result);
 

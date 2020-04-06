@@ -2,14 +2,15 @@ package app.languageResopnses;
 
 import app.controller.SMSController;
 import app.models.Country;
-import app.interfaces.MessageInterface;
 import app.interfaces.ResponseInterface;
 import app.utilities.COVIDTest;
 import app.utilities.LocalTranslation;
 import app.utilities.ResponseFormatter;
 
+import static app.interfaces.MessageInterface.*;
 
-public class IgboResponses implements ResponseInterface, MessageInterface {
+
+public class IgboResponses implements ResponseInterface {
 
 
 
@@ -49,7 +50,7 @@ public class IgboResponses implements ResponseInterface, MessageInterface {
         }
 
         if (request.length() > 2 && request.charAt(2) == '5')
-            response = COVIDTest.getTest(request, ISO_IGBO);
+            response = COVIDTest.takeTest(request, ISO_IGBO);
 
         return response;
     }
