@@ -1,6 +1,6 @@
 package app;
 
-import app.controller.UssdController;
+import app.controller.USSDController;
 import app.network.NetworkClient;
 import app.request.UssdRequest;
 import app.utilities.AtomicRun;
@@ -27,7 +27,7 @@ public class App {
 
         setUpAfricasTalking();
         setUpGoogleApplicationDefaultCredentials();
-        getCountryConvidCases();
+        getCountryCovidCases();
         final App app = new App();
         app.ref = FirebaseDatabase.getInstance().getReference("users");
         app.atomicRun = new AtomicRun();
@@ -67,7 +67,7 @@ public class App {
 
                 saveToFirebase(UssdRequest.getPhoneNumber());
 
-                return UssdController.request();
+                return USSDController.request();
 
             });
 
@@ -91,7 +91,7 @@ public class App {
 
     }
 
-    private static void getCountryConvidCases() {
+    private static void getCountryCovidCases() {
 
         NetworkClient.getInstance().getCountryCovidCases();
 

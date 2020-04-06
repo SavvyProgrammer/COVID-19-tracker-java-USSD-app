@@ -7,7 +7,7 @@ import com.africastalking.sms.Recipient;
 
 import java.util.List;
 
-public class SmsController {
+public class SMSController {
 
 
     public static String[] getRecipient(){
@@ -32,7 +32,7 @@ public class SmsController {
         SmsService smsService = AfricasTalking.getService(AfricasTalking.SERVICE_SMS);
         try {
 
-            List<Recipient> response = smsService.send(SmsController.getMessage(message), SmsController.getShortCode(), SmsController.getRecipient(), true);
+            List<Recipient> response = smsService.send(SMSController.getMessage(message), SMSController.getShortCode(), SMSController.getRecipient(), true);
             if (response != null)
                 for (Recipient recipient : response) {
                     System.out.print(recipient.number);

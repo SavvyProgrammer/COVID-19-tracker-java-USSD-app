@@ -10,12 +10,15 @@ import app.request.UssdRequest;
 import app.interfaces.MessageInterface;
 import static app.interfaces.ResponseInterface.*;
 
-public class UssdController  {
+public class USSDController {
 
 
     public static String request(){
 
-        NetworkClient.getInstance();
+
+
+        if (UssdRequest.getText().length() == 3)
+            NetworkClient.getInstance().getCountryCovidCases();
 
         String response = "";
 

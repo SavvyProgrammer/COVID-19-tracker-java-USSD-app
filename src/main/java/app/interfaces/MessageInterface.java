@@ -1,6 +1,6 @@
 package app.interfaces;
 
-import app.controller.SmsController;
+import app.controller.SMSController;
 import app.request.UssdRequest;
 import app.utilities.LocalTranslation;
 
@@ -41,26 +41,26 @@ public interface MessageInterface {
 
             case ISO_ENGLISH:
                 UssdRequest.setPhoneNumber("+234" + UssdRequest.getText().substring(5));
-                SmsController.sms(PROTECT_YOURSELF_MESSAGE);
+                SMSController.sms(PROTECT_YOURSELF_MESSAGE);
                 return END + " " + THANK_YOU;
 
 
             case ISO_HAUSA:
                 UssdRequest.setPhoneNumber("+234" + UssdRequest.getText().substring(5));
-                SmsController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_HAUSA));
+                SMSController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_HAUSA));
                 return END + " " + LocalTranslation.getTranslate(THANK_YOU, ISO_HAUSA);
 
 
             case ISO_YORUBA:
                 UssdRequest.setPhoneNumber("+234" + UssdRequest.getText().substring(5));
-                SmsController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_YORUBA));
+                SMSController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_YORUBA));
                 return END + " " + LocalTranslation.getTranslate(THANK_YOU, ISO_YORUBA);
 
 
 
             case ISO_IGBO:
                 UssdRequest.setPhoneNumber("+234" + UssdRequest.getText().substring(5));
-                SmsController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_IGBO));
+                SMSController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_IGBO));
                 return  END + " " + LocalTranslation.getTranslate(THANK_YOU, ISO_IGBO);
 
 

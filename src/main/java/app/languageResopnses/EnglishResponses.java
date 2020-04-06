@@ -3,7 +3,7 @@ package app.languageResopnses;
 import app.models.Country;
 import app.interfaces.MessageInterface;
 import app.interfaces.ResponseInterface;
-import app.controller.SmsController;
+import app.controller.SMSController;
 import app.utilities.COVIDTest;
 import app.utilities.ResponseFormatter;
 
@@ -31,13 +31,13 @@ public class EnglishResponses implements ResponseInterface, MessageInterface {
             case "1*2":
 
                 response = END + " " + PROTECT_YOURSELF;
-                SmsController.sms(PROTECT_YOURSELF_MESSAGE);
+                SMSController.sms(PROTECT_YOURSELF_MESSAGE);
                 break;
 
             case "1*3":
 
                 response = END + " " + SYMPTOMS;
-                SmsController.sms(SYMPTOMS_MESSAGE);
+                SMSController.sms(SYMPTOMS_MESSAGE);
                 break;
 
             case "1*4":

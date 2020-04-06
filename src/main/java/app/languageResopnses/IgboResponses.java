@@ -1,6 +1,6 @@
 package app.languageResopnses;
 
-import app.controller.SmsController;
+import app.controller.SMSController;
 import app.models.Country;
 import app.interfaces.MessageInterface;
 import app.interfaces.ResponseInterface;
@@ -33,13 +33,13 @@ public class IgboResponses implements ResponseInterface, MessageInterface {
             case "4*2":
 
                 response = END + " " + LocalTranslation.getTranslate(PROTECT_YOURSELF, ISO_IGBO);
-                SmsController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_IGBO));
+                SMSController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_IGBO));
                 break;
 
             case "4*3":
 
                 response = END + " " + LocalTranslation.getTranslate(SYMPTOMS, ISO_IGBO);
-                SmsController.sms(LocalTranslation.getTranslate(SYMPTOMS_MESSAGE, ISO_IGBO));
+                SMSController.sms(LocalTranslation.getTranslate(SYMPTOMS_MESSAGE, ISO_IGBO));
                 break;
 
             case "4*4":

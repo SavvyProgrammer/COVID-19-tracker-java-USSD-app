@@ -3,21 +3,21 @@ GET
 0
 HTTP/1.1 200 
 15
-date: Sun, 05 Apr 2020 22:34:07 GMT
+date: Mon, 06 Apr 2020 01:05:16 GMT
 content-type: application/json; charset=utf-8
-set-cookie: __cfduid=d94c596cc94c99220705670005a1baf341586126047; expires=Tue, 05-May-20 22:34:07 GMT; path=/; domain=.lmao.ninja; HttpOnly; SameSite=Lax; Secure
+set-cookie: __cfduid=daad188cbcdfa923bcc330e3517f28b991586135116; expires=Wed, 06-May-20 01:05:16 GMT; path=/; domain=.lmao.ninja; HttpOnly; SameSite=Lax; Secure
 x-powered-by: Express
 access-control-allow-origin: *
-etag: W/"17e-Jeqm2vdRCPhNNeRb44tOWhTKMVY"
+etag: W/"17e-ex0Y2sqBWtuBL7X+qWggwYiyMiI"
 ng-cache-status: MISS
 cf-cache-status: DYNAMIC
 expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 server: cloudflare
-cf-ray: 57f6bc158aeda6f9-DUB
+cf-ray: 57f7997f0f1d2967-DUB
 content-encoding: gzip
 Cache-Control: max-age=3600, max-stale=259200
-OkHttp-Sent-Millis: 1586126048076
-OkHttp-Received-Millis: 1586126048400
+OkHttp-Sent-Millis: 1586135117095
+OkHttp-Received-Millis: 1586135117466
 
 TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
 2

@@ -1,6 +1,6 @@
 package app.languageResopnses;
 
-import app.controller.SmsController;
+import app.controller.SMSController;
 import app.models.Country;
 import app.interfaces.MessageInterface;
 import app.interfaces.ResponseInterface;
@@ -32,13 +32,13 @@ public class YorubaResponses implements ResponseInterface, MessageInterface {
             case "3*2":
 
                 response = END + " " + LocalTranslation.getTranslate(PROTECT_YOURSELF, ISO_YORUBA);
-                SmsController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_YORUBA));
+                SMSController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_YORUBA));
                 break;
 
             case "3*3":
 
                 response = END + " " + LocalTranslation.getTranslate(SYMPTOMS, ISO_YORUBA);
-                SmsController.sms(LocalTranslation.getTranslate(SYMPTOMS_MESSAGE, ISO_YORUBA));
+                SMSController.sms(LocalTranslation.getTranslate(SYMPTOMS_MESSAGE, ISO_YORUBA));
                 break;
 
             case "3*4":

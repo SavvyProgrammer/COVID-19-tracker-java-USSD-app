@@ -25,7 +25,7 @@ public class NetworkClient {
 
     private static final String CORONA_API = "https://corona.lmao.ninja";
     private static final Object LOCK = new Object();
-    private static NetworkInterfaceAPI networkInterfaceAPI;
+    private static NetworkInterface networkInterfaceAPI;
     private static NetworkClient sInstance;
 
 
@@ -78,7 +78,7 @@ public class NetworkClient {
                         .client(client)
                         .addConverterFactory(JacksonConverterFactory.create(mapper));
 
-                networkInterfaceAPI = builder.build().create(NetworkInterfaceAPI.class);
+                networkInterfaceAPI = builder.build().create(NetworkInterface.class);
                 sInstance = new NetworkClient();
             }
         }

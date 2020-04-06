@@ -1,6 +1,6 @@
 package app.languageResopnses;
 
-import app.controller.SmsController;
+import app.controller.SMSController;
 import app.models.Country;
 import app.interfaces.ResponseInterface;
 import app.utilities.COVIDTest;
@@ -31,13 +31,13 @@ public class HausaResponses implements ResponseInterface {
             case "2*2":
 
                 response = END + " " + LocalTranslation.getTranslate(PROTECT_YOURSELF, ISO_HAUSA);
-                SmsController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_HAUSA));
+                SMSController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_HAUSA));
                 break;
 
             case "2*3":
 
                 response = END + " " + LocalTranslation.getTranslate(SYMPTOMS, ISO_HAUSA);
-                SmsController.sms(LocalTranslation.getTranslate(SYMPTOMS_MESSAGE, ISO_HAUSA));
+                SMSController.sms(LocalTranslation.getTranslate(SYMPTOMS_MESSAGE, ISO_HAUSA));
                 break;
 
             case "2*4":
