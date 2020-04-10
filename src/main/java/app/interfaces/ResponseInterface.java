@@ -91,7 +91,7 @@ public interface ResponseInterface {
     String NCDC = "You might have been infected with COVID-19, please call NCDC at 080097000010";
 
 
-    String[] CHECKLIST = {
+    String[] QUESTIONS = {
 
             DO_YOU_HAVE_COUGH,
             DO_YOU_HAVE_COLDS,

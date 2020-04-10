@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30f598f9-5729-4b6b-8043-c05acb93474c" name="Default Changelist" comment="">
+    <list default="true" id="30f598f9-5729-4b6b-8043-c05acb93474c" name="Default Changelist" comment="USSD COVID-19">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache.txt/b1a8044d4c40a83e9adc86db812469ba.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache.txt/b1a8044d4c40a83e9adc86db812469ba.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache.txt/journal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/b1a8044d4c40a83e9adc86db812469ba.0" beforeDir="false" afterPath="$PROJECT_DIR$/cache/b1a8044d4c40a83e9adc86db812469ba.0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/b1a8044d4c40a83e9adc86db812469ba.1" beforeDir="false" afterPath="$PROJECT_DIR$/cache/b1a8044d4c40a83e9adc86db812469ba.1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/journal" beforeDir="false" afterPath="$PROJECT_DIR$/cache/journal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/app/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/network/NetworkClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/app/network/NetworkClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/Convid-19.main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/controller/SMSController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/controller/USSDController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/interfaces/MessageInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/interfaces/ResponseInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/languageResopnses/EnglishResponses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/languageResopnses/HausaResponses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/languageResopnses/IgboResponses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/languageResopnses/YorubaResponses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/models/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/network/NetworkClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/network/NetworkClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/network/NetworkInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/request/USSDRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/utilities/AtomicRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/utilities/COVIDTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/utilities/LocalTranslation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/app/utilities/ResponseFormatter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/SMSController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/SMSController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/USSDController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/USSDController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/interfaces/MessageInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/interfaces/MessageInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/languageResopnses/EnglishResponses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/languageResopnses/EnglishResponses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/languageResopnses/IgboResponses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/languageResopnses/IgboResponses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/languageResopnses/YorubaResponses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/languageResopnses/YorubaResponses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/request/UssdRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/request/USSDRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/interfaces/ResponseInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/interfaces/ResponseInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/network/NetworkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/network/NetworkClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/utilities/COVIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/utilities/COVIDTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +70,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
@@ -70,14 +92,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/App/Network" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -93,7 +117,89 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1588870361000" />
+                <option name="domain" value="lmao.ninja" />
+                <option name="name" value="__cfduid" />
+                <option name="path" value="/" />
+                <option name="value" value="d346ef28a847a1c994a7b868fcfe5139d1586278361" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://httpbin.org/get" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="show_env" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1588870361000" />
+                <option name="domain" value="lmao.ninja" />
+                <option name="name" value="__cfduid" />
+                <option name="path" value="/" />
+                <option name="value" value="d346ef28a847a1c994a7b868fcfe5139d1586278361" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://httpbin.org/ip" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://corona.lmao.ninja/countries/566" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.App" />
       <module name="Convid-19.main" />
@@ -101,9 +207,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="566#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/java/app/network/https:/corona.lmao.ninja/countries/566.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="All in 566" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/java/app/network/https:/corona.lmao.ninja/countries/566.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="All in get-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="HTTP Request.All in get-requests" />
+        <item itemvalue="HTTP Request.566#1" />
+        <item itemvalue="HTTP Request.All in 566" />
       </list>
     </recent_temporary>
   </component>
@@ -125,22 +243,47 @@
       <workItem from="1585994340637" duration="33967000" />
       <workItem from="1586070483205" duration="15287000" />
       <workItem from="1586089456957" duration="13713000" />
-      <workItem from="1586115817169" duration="9628000" />
+      <workItem from="1586115817169" duration="12310000" />
+      <workItem from="1586275674028" duration="1028000" />
+      <workItem from="1586276727805" duration="1452000" />
+      <workItem from="1586366628028" duration="3296000" />
+      <workItem from="1586419870987" duration="8797000" />
+      <workItem from="1586497191863" duration="1286000" />
+      <workItem from="1586498516444" duration="3144000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="USSD COVID-19" />
+    <option name="LAST_COMMIT_MESSAGE" value="USSD COVID-19" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="555" y="215" width="800" height="673" key="#Inspections" timestamp="1586500526611">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="555" y="215" width="800" height="673" key="#Inspections/0.28.1920.1052@0.28.1920.1052" timestamp="1586500526611" />
     <state x="555" y="215" width="800" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585673094237">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="555" y="215" width="800" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1585673094237" />
-    <state x="768" y="265" width="374" height="573" key="#com.intellij.ide.util.MemberChooser" timestamp="1585933501299">
+    <state x="553" y="358" width="803" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586420933365">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="768" y="265" width="374" height="573" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1585933501299" />
+    <state x="553" y="358" width="803" height="387" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1586420933365" />
+    <state x="768" y="265" width="374" height="573" key="#com.intellij.ide.util.MemberChooser" timestamp="1586499459678">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="768" y="265" width="374" height="573" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1586499459678" />
     <state x="688" y="335" width="524" height="441" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1585843177100">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -153,34 +296,38 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="717" y="412" width="476" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.28.1920.1052@0.28.1920.1052" timestamp="1585843178764" />
-    <state x="382" y="28" width="1136" height="1048" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586145597401">
+    <state x="382" y="28" width="1136" height="1048" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586148160785">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="382" y="28" width="1136" height="1048" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1586145597401" />
+    <state x="382" y="28" width="1136" height="1048" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1586148160785" />
     <state x="693" y="302" width="524" height="499" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586103815103">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="693" y="302" width="524" height="499" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1586103815103" />
-    <state x="533" y="118" width="844" height="868" key="CommitChangelistDialog2" timestamp="1586131215215">
+    <state x="533" y="118" width="844" height="868" key="CommitChangelistDialog2" timestamp="1586499399466">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="533" y="118" width="844" height="868" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1586131215215" />
-    <state width="1874" height="522" key="GridCell.Tab.0.bottom" timestamp="1586146864473">
+    <state x="533" y="118" width="844" height="868" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1586499399466" />
+    <state x="728" y="281" width="453" height="541" key="FileChooserDialogImpl" timestamp="1586497656764">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1874" height="522" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1586146864473" />
-    <state width="1874" height="522" key="GridCell.Tab.0.center" timestamp="1586146864472">
+    <state x="728" y="281" width="453" height="541" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1586497656764" />
+    <state width="1874" height="369" key="GridCell.Tab.0.bottom" timestamp="1586460332989">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1874" height="522" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1586146864472" />
-    <state width="1874" height="522" key="GridCell.Tab.0.left" timestamp="1586146864471">
+    <state width="1874" height="369" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1586460332989" />
+    <state width="1874" height="369" key="GridCell.Tab.0.center" timestamp="1586460332988">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1874" height="522" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1586146864471" />
-    <state width="1874" height="522" key="GridCell.Tab.0.right" timestamp="1586146864473">
+    <state width="1874" height="369" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1586460332988" />
+    <state width="1874" height="369" key="GridCell.Tab.0.left" timestamp="1586460332987">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1874" height="522" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1586146864472" />
+    <state width="1874" height="369" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1586460332987" />
+    <state width="1874" height="369" key="GridCell.Tab.0.right" timestamp="1586460332989">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="369" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1586460332989" />
     <state width="1874" height="351" key="GridCell.Tab.1.bottom" timestamp="1585674193388">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -197,14 +344,18 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state width="1874" height="351" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585674193387" />
-    <state x="449" y="189" key="SettingsEditor" timestamp="1585671457211">
+    <state x="449" y="189" key="SettingsEditor" timestamp="1586500155802">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="449" y="189" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1585671457211" />
-    <state x="620" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586115817623">
+    <state x="449" y="189" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1586500155802" />
+    <state x="620" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586498528277">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="620" y="381" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1586115817623" />
+    <state x="620" y="381" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1586498528277" />
+    <state width="490" height="230" key="javadoc.popup.new" timestamp="1586501603358">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="490" height="230" key="javadoc.popup.new/0.28.1920.1052@0.28.1920.1052" timestamp="1586501603358" />
     <state x="624" y="255" key="run.anything.popup" timestamp="1586038002955">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>

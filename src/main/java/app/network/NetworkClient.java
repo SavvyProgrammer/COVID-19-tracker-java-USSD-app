@@ -1,7 +1,7 @@
 package app.network;
 
-import app.models.Country;
 
+import app.models.Country;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.Cache;
@@ -13,11 +13,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-
 import retrofit2.converter.jackson.JacksonConverterFactory;
+import retrofit2.internal.EverythingIsNonNull;
 
 import java.io.File;
-
 import java.util.LinkedHashMap;
 import java.util.concurrent.TimeUnit;
 
@@ -91,21 +90,18 @@ public class NetworkClient {
         Call<Object> networkCall = networkInterfaceAPI.getCountryCasesInfo();
 
         networkCall.enqueue(new Callback<Object>() {
-            @Override
 
+            @EverythingIsNonNull
+            @Override
             public void onResponse(Call<Object> call, Response<Object> response) {
                 if (response.body() != null) {
-                    LinkedHashMap linkedHashMap = (LinkedHashMap) response.body();
-
-                    Country.setCases((Integer) linkedHashMap.get("cases"));
-                    Country.setActive((Integer) linkedHashMap.get("active"));
-                    Country.setDeaths((Integer) linkedHashMap.get("deaths"));
-                    Country.setRecovered((Integer) linkedHashMap.get("recovered"));
-                    Country.setTodayCases((Integer) linkedHashMap.get("todayCases"));
+                    LinkedHashMap<String, Object> linkedHashMap = (LinkedHashMap) response.body();
+                    Country.getResponseBody(linkedHashMap);
 
                 }
             }
 
+            @EverythingIsNonNull
             @Override
             public void onFailure(Call<Object> call, Throwable throwable) {
                 System.out.println(throwable.getMessage());

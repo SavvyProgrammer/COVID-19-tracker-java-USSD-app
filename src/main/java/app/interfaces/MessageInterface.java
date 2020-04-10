@@ -33,33 +33,33 @@ public interface MessageInterface {
     String SYMPTOMS = "You will receive a message shortly";
 
 
-    static String sendMessageToFriend(String lang) {
+    String CODE = "+234";
 
+    static String sendMessageToFriend(String lang, String phone) {
 
 
         switch (lang) {
 
             case ISO_ENGLISH:
-                USSDRequest.setPhoneNumber("+234" + USSDRequest.getText().substring(5));
+                USSDRequest.setPhoneNumber(CODE + phone);
                 SMSController.sms(PROTECT_YOURSELF_MESSAGE);
                 return END + " " + THANK_YOU;
 
 
             case ISO_HAUSA:
-                USSDRequest.setPhoneNumber("+234" + USSDRequest.getText().substring(5));
+                USSDRequest.setPhoneNumber(CODE + phone);
                 SMSController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_HAUSA));
                 return END + " " + LocalTranslation.getTranslate(THANK_YOU, ISO_HAUSA);
 
 
             case ISO_YORUBA:
-                USSDRequest.setPhoneNumber("+234" + USSDRequest.getText().substring(5));
+                USSDRequest.setPhoneNumber(CODE + phone);
                 SMSController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_YORUBA));
                 return END + " " + LocalTranslation.getTranslate(THANK_YOU, ISO_YORUBA);
 
 
-
             case ISO_IGBO:
-                USSDRequest.setPhoneNumber("+234" + USSDRequest.getText().substring(5));
+                USSDRequest.setPhoneNumber(CODE + phone);
                 SMSController.sms(LocalTranslation.getTranslate(PROTECT_YOURSELF_MESSAGE, ISO_IGBO));
                 return  END + " " + LocalTranslation.getTranslate(THANK_YOU, ISO_IGBO);
 

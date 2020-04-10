@@ -53,7 +53,7 @@ public class COVIDTest {
 
         calculateScore(index);
 
-        return CHECKLIST[counter++];
+        return QUESTIONS[counter++];
 
     }
 

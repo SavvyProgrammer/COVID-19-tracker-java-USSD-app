@@ -1,12 +1,13 @@
 package app.controller;
 
 
+import app.interfaces.MessageInterface;
 import app.languageResopnses.EnglishResponses;
 import app.languageResopnses.HausaResponses;
 import app.languageResopnses.IgboResponses;
 import app.languageResopnses.YorubaResponses;
 import app.network.NetworkClient;
-import app.interfaces.MessageInterface;
+
 import static app.interfaces.ResponseInterface.*;
 
 public class USSDController {
@@ -62,19 +63,19 @@ public class USSDController {
 
             if (firstIndex == '1')
 
-                response = MessageInterface.sendMessageToFriend(ISO_ENGLISH);
+                response = MessageInterface.sendMessageToFriend(ISO_ENGLISH, request.substring(5));
 
             if (firstIndex == '2')
 
-                response = MessageInterface.sendMessageToFriend(ISO_HAUSA);
+                response = MessageInterface.sendMessageToFriend(ISO_HAUSA, request.substring(5));
 
             if (firstIndex == '3')
 
-                response = MessageInterface.sendMessageToFriend(ISO_YORUBA);
+                response = MessageInterface.sendMessageToFriend(ISO_YORUBA, request.substring(5));
 
             if (firstIndex == '4')
 
-                response = MessageInterface.sendMessageToFriend(ISO_IGBO);
+                response = MessageInterface.sendMessageToFriend(ISO_IGBO, request.substring(5));
         }
 
         return response;

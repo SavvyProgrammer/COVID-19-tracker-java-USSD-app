@@ -1,5 +1,7 @@
 package app.models;
 
+import java.util.LinkedHashMap;
+
 public class Country {
 
     private static Integer cases;
@@ -12,7 +14,7 @@ public class Country {
         return cases;
     }
 
-    public static void setCases(Integer cases) {
+    static void setCases(Integer cases) {
         Country.cases = cases;
     }
 
@@ -20,7 +22,7 @@ public class Country {
         return active;
     }
 
-    public static void setActive(Integer active) {
+    static void setActive(Integer active) {
         Country.active = active;
     }
 
@@ -28,7 +30,7 @@ public class Country {
         return todayCases;
     }
 
-    public static void setTodayCases(Integer todayCases) {
+    static void setTodayCases(Integer todayCases) {
         Country.todayCases = todayCases;
     }
 
@@ -36,7 +38,7 @@ public class Country {
         return recovered;
     }
 
-    public static void setRecovered(Integer recovered) {
+    static void setRecovered(Integer recovered) {
         Country.recovered = recovered;
     }
 
@@ -44,10 +46,19 @@ public class Country {
         return deaths;
     }
 
-    public static void setDeaths(Integer deaths) {
+    static void setDeaths(Integer deaths) {
         Country.deaths = deaths;
     }
 
+    public static void getResponseBody(LinkedHashMap<String, Object> response) {
+
+
+        Country.setCases((Integer) response.get("cases"));
+        Country.setActive((Integer) response.get("active"));
+        Country.setDeaths((Integer) response.get("deaths"));
+        Country.setRecovered((Integer) response.get("recovered"));
+        Country.setTodayCases((Integer) response.get("todayCases"));
+    }
 
     public static String getCountryInfo() {
 

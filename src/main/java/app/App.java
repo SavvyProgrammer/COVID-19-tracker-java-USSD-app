@@ -3,16 +3,13 @@ package app;
 import app.controller.USSDController;
 import app.network.NetworkClient;
 import app.request.USSDRequest;
-import app.utilities.AtomicRun;
 import com.africastalking.AfricasTalking;
 import com.africastalking.UssdService;
-
 import com.google.auth.oauth2.GoogleCredentials;
-
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
-import com.google.firebase.database.*;
-
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.IOException;
 
@@ -21,7 +18,7 @@ import static spark.Spark.*;
 public class App {
 
     DatabaseReference ref;
-    AtomicRun atomicRun;
+
     public static void main(String[] args) throws IOException {
 
 
@@ -30,7 +27,6 @@ public class App {
         getCountryCovidCases();
         final App app = new App();
         app.ref = FirebaseDatabase.getInstance().getReference("users");
-        app.atomicRun = new AtomicRun();
         app.run();
 
 
@@ -55,7 +51,7 @@ public class App {
         synchronized (this) {
 
 
-            get("/", (request, response) ->  USSDRequest.string());
+            get("/", (request, response) -> USSDRequest.string());
 
 
             post("/", (request, response) -> {
@@ -65,19 +61,22 @@ public class App {
                 USSDRequest.setPhoneNumber(request.queryParams(UssdService.FLAG_PHONE_NUMBER));
                 USSDRequest.setText(request.queryParams(UssdService.FLAG_TEXT));
 
-                saveToFirebase(USSDRequest.getPhoneNumber());
 
-                return USSDController.request(USSDRequest.getText());
+                String res = USSDController.request(USSDRequest.getText());
+
+                if (res.substring(0, 3).equals("END"))
+                    saveToFirebase(USSDRequest.getPhoneNumber());
+
+                return res;
 
             });
 
         }
-
     }
 
     private void saveToFirebase(String phoneNumber) {
 
-        atomicRun.setRun(() -> ref.setValue(phoneNumber, (databaseError, databaseReference) -> {
+        ref.child(phoneNumber.substring(4)).setValue(phoneNumber, (databaseError, databaseReference) -> {
 
             if (databaseError != null)
 
@@ -87,7 +86,7 @@ public class App {
 
                 System.out.println("Data saved successfully.");
 
-        }));
+        });
 
     }
 
