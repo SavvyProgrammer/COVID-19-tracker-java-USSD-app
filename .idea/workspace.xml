@@ -2,41 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30f598f9-5729-4b6b-8043-c05acb93474c" name="Default Changelist" comment="USSD COVID-19">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache.txt/b1a8044d4c40a83e9adc86db812469ba.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache.txt/b1a8044d4c40a83e9adc86db812469ba.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache.txt/journal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/b1a8044d4c40a83e9adc86db812469ba.0" beforeDir="false" afterPath="$PROJECT_DIR$/cache/b1a8044d4c40a83e9adc86db812469ba.0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/b1a8044d4c40a83e9adc86db812469ba.1" beforeDir="false" afterPath="$PROJECT_DIR$/cache/b1a8044d4c40a83e9adc86db812469ba.1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/journal" beforeDir="false" afterPath="$PROJECT_DIR$/cache/journal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/Convid-19.main.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/controller/SMSController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/controller/USSDController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/interfaces/MessageInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/interfaces/ResponseInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/languageResopnses/EnglishResponses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/languageResopnses/HausaResponses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/languageResopnses/IgboResponses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/languageResopnses/YorubaResponses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/models/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/network/NetworkClient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/network/NetworkClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/network/NetworkInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/request/USSDRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/utilities/AtomicRun.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/utilities/COVIDTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/utilities/LocalTranslation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/app/utilities/ResponseFormatter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/USSDController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/USSDController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/interfaces/MessageInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/interfaces/MessageInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/interfaces/ResponseInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/interfaces/ResponseInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/models/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/network/NetworkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/network/NetworkClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/utilities/COVIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/utilities/COVIDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/utilities/AtomicRun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/utilities/ResponseFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/utilities/ResponseFormatter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +78,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -249,8 +226,20 @@
       <workItem from="1586366628028" duration="3296000" />
       <workItem from="1586419870987" duration="8797000" />
       <workItem from="1586497191863" duration="1286000" />
-      <workItem from="1586498516444" duration="3144000" />
+      <workItem from="1586498516444" duration="4963000" />
+      <workItem from="1586824588522" duration="932000" />
+      <workItem from="1586849306705" duration="2585000" />
+      <workItem from="1587210282407" duration="615000" />
+      <workItem from="1588590702148" duration="1952000" />
     </task>
+    <task id="LOCAL-00001" summary="USSD COVID-19">
+      <created>1586501745014</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586501745014</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +249,7 @@
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="USSD COVID-19" />
     <option name="LAST_COMMIT_MESSAGE" value="USSD COVID-19" />
@@ -268,6 +258,10 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="550" y="213" width="800" height="673" key="#Deployment" timestamp="1586501721885">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="550" y="213" width="800" height="673" key="#Deployment/0.28.1920.1052@0.28.1920.1052" timestamp="1586501721885" />
     <state x="555" y="215" width="800" height="673" key="#Inspections" timestamp="1586500526611">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -304,30 +298,30 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="693" y="302" width="524" height="499" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1586103815103" />
-    <state x="533" y="118" width="844" height="868" key="CommitChangelistDialog2" timestamp="1586499399466">
+    <state x="533" y="118" width="844" height="868" key="CommitChangelistDialog2" timestamp="1586501931100">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="533" y="118" width="844" height="868" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1586499399466" />
-    <state x="728" y="281" width="453" height="541" key="FileChooserDialogImpl" timestamp="1586497656764">
+    <state x="533" y="118" width="844" height="868" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1586501931100" />
+    <state x="728" y="281" width="453" height="541" key="FileChooserDialogImpl" timestamp="1586509536354">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="728" y="281" width="453" height="541" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1586497656764" />
-    <state width="1874" height="369" key="GridCell.Tab.0.bottom" timestamp="1586460332989">
+    <state x="728" y="281" width="453" height="541" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1586509536354" />
+    <state width="1874" height="369" key="GridCell.Tab.0.bottom" timestamp="1586849991649">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1586460332989" />
-    <state width="1874" height="369" key="GridCell.Tab.0.center" timestamp="1586460332988">
+    <state width="1874" height="369" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1586849991649" />
+    <state width="1874" height="369" key="GridCell.Tab.0.center" timestamp="1586849991647">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1586460332988" />
-    <state width="1874" height="369" key="GridCell.Tab.0.left" timestamp="1586460332987">
+    <state width="1874" height="369" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1586849991647" />
+    <state width="1874" height="369" key="GridCell.Tab.0.left" timestamp="1586849991646">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1586460332987" />
-    <state width="1874" height="369" key="GridCell.Tab.0.right" timestamp="1586460332989">
+    <state width="1874" height="369" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1586849991646" />
+    <state width="1874" height="369" key="GridCell.Tab.0.right" timestamp="1586849991648">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1586460332989" />
+    <state width="1874" height="369" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1586849991648" />
     <state width="1874" height="351" key="GridCell.Tab.1.bottom" timestamp="1585674193388">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -348,14 +342,18 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="449" y="189" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1586500155802" />
-    <state x="620" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586498528277">
+    <state x="620" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1588590703771">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="620" y="381" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1586498528277" />
-    <state width="490" height="230" key="javadoc.popup.new" timestamp="1586501603358">
+    <state x="620" y="381" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1588590703771" />
+    <state width="490" height="230" key="javadoc.popup.new" timestamp="1586824892842">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="490" height="230" key="javadoc.popup.new/0.28.1920.1052@0.28.1920.1052" timestamp="1586501603358" />
+    <state width="490" height="230" key="javadoc.popup.new/0.28.1920.1052@0.28.1920.1052" timestamp="1586824892842" />
+    <state x="0" y="135" width="1910" height="834" key="new project wizard" timestamp="1586509550701">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="0" y="135" width="1910" height="834" key="new project wizard/0.28.1920.1052@0.28.1920.1052" timestamp="1586509550701" />
     <state x="624" y="255" key="run.anything.popup" timestamp="1586038002955">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>

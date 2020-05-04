@@ -22,7 +22,6 @@ dependencies {
     implementation 'org.slf4j:slf4j-simple:1.7.21'
     implementation 'com.google.firebase:firebase-admin:6.12.1'
     implementation 'com.google.cloud:google-cloud-translate:1.94.4'
-    implementation 'ccom.squareup.retrofit2:retrofit:2.8.1'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
     implementation 'com.squareup.retrofit2:converter-jackson:2.7.1'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.1'

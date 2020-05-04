@@ -63,9 +63,9 @@ public class Country {
     public static String getCountryInfo() {
 
         return "Cases: " + getCases() +
-                "/" + "Today Cases: " + getTodayCases() +
-                "/" + "Active Cases: " + getActive() +
-                "/" + "Recovered: " + getRecovered() +
-                "/" + "Deaths: " + getDeaths();
+                "/*/" + "Today Cases: " + getTodayCases() +
+                "/*/" + "Active Cases: " + getActive() +
+                "/*/" + "Recovered: " + getRecovered() +
+                "/*/" + "Deaths: " + getDeaths();
     }
 }
