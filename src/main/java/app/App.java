@@ -36,7 +36,7 @@ public class App {
 
         FirebaseOptions options = new FirebaseOptions.Builder()
                 .setCredentials(GoogleCredentials.getApplicationDefault())
-                .setDatabaseUrl("https://convid-19-e77b4.firebaseio.com/")
+                .setDatabaseUrl("Firebase database URL")
                 .build();
         FirebaseApp.initializeApp(options);
 
@@ -99,7 +99,7 @@ public class App {
     private static void setUpAfricasTalking() {
 
         final String USERNAME = "sandbox";
-        final String API_KEY = "2e8091acff04bacb33a3b58d884ae469a91ce7254f471754b73863687620dde4";
+        final String API_KEY = "//API key";
         AfricasTalking.initialize(USERNAME, API_KEY);
         port(getHerokuAssignedPort());
     }
