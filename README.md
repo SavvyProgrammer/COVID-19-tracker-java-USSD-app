@@ -12,7 +12,7 @@ Harnessing the power of Machine Learning (ML), the application supports the four
 * [Google Cloud Translation API](https://cloud.google.com/translate) - Google Cloud Translation service
 
 
-## Authors
+## Author
 
 * **Samson Ehigiator** | **samson.o.ehigiator@gmail.com**
 
