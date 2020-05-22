@@ -13,7 +13,7 @@ public class ResponseFormatter {
 
     public static String getFormat(String response)  {
 
-        System.out.println(String.join("\n", response.split("\\*")));
+     
         return String.join("\n", response.split("\\*"));
 
 
