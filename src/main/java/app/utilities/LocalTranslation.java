@@ -8,7 +8,7 @@ import com.google.cloud.translate.TranslateOptions;
 public class LocalTranslation {
 
     static Translate translate = TranslateOptions.newBuilder()
-            .setApiKey("AIzaSyA2Iy_RKiBWy_olSAjZkbtf0oKtgshjfyw") // setApiKey is deprecated, use google service account instead
+            .setApiKey("API key") // setApiKey is deprecated, use google service account instead
             .build()
             .getService();
 
