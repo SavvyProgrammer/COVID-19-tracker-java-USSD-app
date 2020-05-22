@@ -24,7 +24,7 @@ public interface MessageInterface {
             "Body aches, " +
             "Fatigue, " +
             "Fever (37.8C and above), " +
-            "if you have all of these symptoms please call NCDC at 080097000010";
+            "if you have all of these symptoms, please call these toll-free lines that have been activated by Edo State Government for assistance: 08001235111 or 08002200110";
 
 
     String PROTECT_YOURSELF = "You will receive a message shortly that explains how to protect yourself from Coronavirus";

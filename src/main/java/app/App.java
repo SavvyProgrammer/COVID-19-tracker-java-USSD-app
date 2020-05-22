@@ -62,9 +62,9 @@ public class App {
                 USSDRequest.setText(request.queryParams(UssdService.FLAG_TEXT));
 
 
-                String res = USSDController.request(USSDRequest.getText());
+                String res = USSDController.getInstance().request(USSDRequest.getText());
 
-                if (res.substring(0, 3).equals("END"))
+                if (res.startsWith("END"))
                     saveToFirebase(USSDRequest.getPhoneNumber());
 
                 return res;

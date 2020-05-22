@@ -1,19 +1,35 @@
 package app.languageResopnses;
 
 import app.models.Country;
-import app.interfaces.ResponseInterface;
 import app.controller.SMSController;
 import app.utilities.COVIDTest;
 import app.utilities.ResponseFormatter;
 
 import static app.interfaces.MessageInterface.*;
+import static app.interfaces.ResponseInterface.*;
 
 
-public class EnglishResponses implements ResponseInterface {
+public class EnglishResponses {
+
+
+    private static EnglishResponses instance;
+    private final COVIDTest covidTest = new COVIDTest();
+
+    // required private constructor
+    public EnglishResponses() {
+
+    }
+
+    public static EnglishResponses getInstance() {
+        if(instance == null) {
+            instance = new EnglishResponses();
+        }
+        return instance;
+    }
 
 
 
-    public static String getResponse(String request) {
+    public String getResponse(String request) {
 
         String response = "";
 
@@ -21,12 +37,12 @@ public class EnglishResponses implements ResponseInterface {
 
             case "1":
 
-                response = CON + " " + ResponseFormatter.getFormat(SELECT_AN_OPTION);
+                response = CON + " " + ResponseFormatter.getFormat("en", SELECT_AN_OPTION);
                 break;
 
             case "1*1":
 
-                response = END + " " + ResponseFormatter.getFormat(Country.getCountryInfo());
+                response = END + " " + ResponseFormatter.getFormat("en", Country.getCountryInfo());
                 break;
 
             case "1*2":
@@ -48,7 +64,7 @@ public class EnglishResponses implements ResponseInterface {
         }
 
         if (request.length() > 2 && request.charAt(2) == '5')
-            response = COVIDTest.takeTest(request);
+            response = covidTest.takeTest(request);
 
         return response;
     }

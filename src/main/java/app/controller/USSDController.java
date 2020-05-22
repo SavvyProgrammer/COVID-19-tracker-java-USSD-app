@@ -12,10 +12,21 @@ import static app.interfaces.ResponseInterface.*;
 
 public class USSDController {
 
+    private static USSDController instance;
 
-    public static String request(String request){
 
+    private USSDController(){
 
+    }
+
+    public static USSDController getInstance() {
+
+        if (instance == null)
+            instance = new USSDController();
+        return instance;
+    }
+
+    public String request(String request){
 
         if (request.length() == 3)
             NetworkClient.getInstance().getCountryCovidCases();
@@ -37,22 +48,22 @@ public class USSDController {
 
             case '1':
 
-                response = EnglishResponses.getResponse(request);
+                response = EnglishResponses.getInstance().getResponse(request);
                 break;
 
             case '2':
 
-                response = HausaResponses.getResponse(request);
+                response = HausaResponses.getInstance().getResponse(request);
                 break;
 
             case '3':
 
-                response = YorubaResponses.getResponse(request);
+                response = YorubaResponses.getInstance().getResponse(request);
                 break;
 
             case '4':
 
-                response = IgboResponses.getResponse(request);
+                response = IgboResponses.getInstance().getResponse(request);
                 break;
 
         }

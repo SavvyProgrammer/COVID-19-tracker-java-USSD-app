@@ -2,18 +2,35 @@ package app.languageResopnses;
 
 import app.controller.SMSController;
 import app.models.Country;
-import app.interfaces.ResponseInterface;
+
 import app.utilities.COVIDTest;
 import app.utilities.LocalTranslation;
 import app.utilities.ResponseFormatter;
 
 import static app.interfaces.MessageInterface.*;
+import static app.interfaces.ResponseInterface.*;
 
-public class HausaResponses implements ResponseInterface {
+public class HausaResponses {
+
+    private static HausaResponses instance;
+    private final COVIDTest covidTest = new COVIDTest();
 
 
+    // required private constructor
+    private HausaResponses() {
 
-    public static String getResponse(String request) {
+    }
+
+    // lazy initialization
+    public static HausaResponses getInstance() {
+
+        if (instance == null)
+            instance = new HausaResponses();
+
+        return instance;
+    }
+
+    public String getResponse(String request) {
 
         String response = "";
         switch (request) {
@@ -48,7 +65,7 @@ public class HausaResponses implements ResponseInterface {
 
 
         if (request.length() > 2 && request.charAt(2) == '5')
-            response = COVIDTest.takeTest(request, ISO_HAUSA);
+            response = covidTest.takeTest(request, ISO_HAUSA);
 
         return response;
     }

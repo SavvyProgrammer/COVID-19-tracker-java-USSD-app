@@ -6,6 +6,6 @@ import retrofit2.http.GET;
 
 public interface NetworkInterface {
 
-    @GET("/countries/566")
+    @GET("/v2/countries/566")
     Call<Object> getCountryCasesInfo();
 }

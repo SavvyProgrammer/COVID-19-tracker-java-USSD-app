@@ -2,19 +2,36 @@ package app.languageResopnses;
 
 import app.controller.SMSController;
 import app.models.Country;
-import app.interfaces.ResponseInterface;
-
 import app.utilities.COVIDTest;
 import app.utilities.LocalTranslation;
 import app.utilities.ResponseFormatter;
 
 import static app.interfaces.MessageInterface.*;
+import static app.interfaces.ResponseInterface.*;
 
-public class YorubaResponses implements ResponseInterface {
+public class YorubaResponses {
+
+
+    private static YorubaResponses instance;
+    private final COVIDTest covidTest = new COVIDTest();
+
+    // required private constructor
+    private YorubaResponses() {
+
+    }
+
+    // lazy initialization
+    public static YorubaResponses getInstance() {
+        if(instance == null){
+            instance = new YorubaResponses();
+        }
+        return instance;
+    }
 
 
 
-    public static String getResponse(String request) {
+
+    public String getResponse(String request) {
 
         String response = "";
 
@@ -49,7 +66,7 @@ public class YorubaResponses implements ResponseInterface {
         }
 
         if (request.length() > 2 && request.charAt(2) == '5')
-            response = COVIDTest.takeTest(request, ISO_YORUBA);
+            response = covidTest.takeTest(request, ISO_YORUBA);
 
 
         return response;

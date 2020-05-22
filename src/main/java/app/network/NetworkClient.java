@@ -22,8 +22,7 @@ import java.util.concurrent.TimeUnit;
 
 public class NetworkClient {
 
-    private static final String CORONA_API = "https://corona.lmao.ninja";
-    private static final Object LOCK = new Object();
+    private static final String CORONA_API = "https://corona.lmao.ninja"; //base url API
     private static NetworkInterface networkInterfaceAPI;
     private static NetworkClient sInstance;
 
@@ -34,7 +33,7 @@ public class NetworkClient {
 
     public static NetworkClient getInstance() {
         if (sInstance == null || networkInterfaceAPI == null) {
-            synchronized (LOCK) {
+            synchronized (NetworkClient.class) {
 
                 // 5 MB of cache
                Cache cache = new Cache(new File("cache"), 5 * 1024 * 1024);

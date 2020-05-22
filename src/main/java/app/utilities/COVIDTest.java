@@ -6,10 +6,10 @@ import static app.interfaces.ResponseInterface.*;
 
 public class COVIDTest {
 
-    private static int counter;
-    private static int score;
+    private int counter;
+    private int score;
 
-    private static void calculateScore(char lastIndex) {
+    private void calculateScore(char lastIndex) {
 
 
         if (lastIndex == '2' || lastIndex == '5' )
@@ -19,7 +19,7 @@ public class COVIDTest {
 
     }
 
-    private static String getTestScore() {
+    private String getTestScore() {
 
         if (score <= 2)
             return "1";
@@ -35,7 +35,7 @@ public class COVIDTest {
 
     }
 
-    private static void init(String result) {
+    private void init(String result) {
 
         if (result.matches("[1-4]")) {
             score = 0;
@@ -44,7 +44,7 @@ public class COVIDTest {
 
     }
 
-    public static String getResponse(char index) {
+    public String getResponse(char index) {
 
 
         if (counter == 12)
@@ -57,7 +57,7 @@ public class COVIDTest {
 
     }
 
-    public static String takeTest(String request) {
+    public String takeTest(String request) {
 
         String result = getResponse(request.charAt(request.length() - 1));
 
@@ -77,7 +77,7 @@ public class COVIDTest {
                 return END + " " + NCDC;
 
             default:
-                return CON + " " + ResponseFormatter.getFormat(result);
+                return CON + " " + ResponseFormatter.getFormat("en", result);
 
         }
 
@@ -86,7 +86,7 @@ public class COVIDTest {
 
 
 
-    public static String takeTest(String request, String isoLang) {
+    public String takeTest(String request, String isoLang) {
 
 
 
